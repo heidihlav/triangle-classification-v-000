@@ -15,7 +15,7 @@ class Triangle
       :isosceles
     elsif a!=b && b!=c && a!=c
       :scalene
-    elsif a begin
+    elsif begin
       raise TriangleError
     rescue TriangleError => error
         puts error.message
