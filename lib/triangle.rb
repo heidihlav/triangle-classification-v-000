@@ -20,6 +20,11 @@ class Triangle
 
   def real_triangle
 
+  elsif begin
+    raise TriangleError
+  rescue TriangleError => error
+      puts error.message
+    end
   end
 
   class TriangleError < StandardError
