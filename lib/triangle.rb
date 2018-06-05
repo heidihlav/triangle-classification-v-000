@@ -12,10 +12,11 @@ class Triangle
     if a==b && b==c
       :equilateral
       begin
-      raise TriangleError => error
+      raise TriangleError
+    rescue TriangleError => error
         puts error.message
-      end  
-    rescue
+      end
+
 
 
     elsif a==b || b==c || a==c
