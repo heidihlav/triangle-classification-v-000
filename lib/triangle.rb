@@ -23,6 +23,10 @@ class Triangle
     end
   end
 
+  def real_triangle
+
+  end
+
   class TriangleError < StandardError
     def message
       "This isn't a triangle."
