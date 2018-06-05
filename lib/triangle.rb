@@ -19,7 +19,8 @@ class Triangle
   end
 
   def real_triangle
-  elsif begin
+    a + b > c && a + c > b && b + c > a
+  begin
     raise TriangleError
   rescue TriangleError => error
       puts error.message
