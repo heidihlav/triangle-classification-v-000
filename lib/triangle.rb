@@ -21,11 +21,8 @@ class Triangle
 
   def real_triangle
     triangle = a + b > c && a + c > b && b + c > a && a > 0 && b > 0 && c > 0
-  begin if !triangle
-    raise TriangleError
-  end
-  rescue TriangleError => error
-      puts error.message
+    raise TriangleError if !triangle
+
     end
   end
 
