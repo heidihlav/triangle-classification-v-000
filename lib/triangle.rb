@@ -11,7 +11,7 @@ class Triangle
   def kind
     if a==b && b==c
       :equilateral
-      raise TriangleError 
+      raise TriangleError
     elsif a==b || b==c || a==c
       :isosceles
     elsif a!=b && b!=c && a!=c
@@ -20,7 +20,9 @@ class Triangle
   end
 
   class TriangleError < StandardError
+    def message
 
+    end
   end
 
 end
