@@ -19,8 +19,7 @@ class Triangle
   end
 
   def real_triangle
-    a + b > c && a + c > b && b + c > a
-    a > 0 && b > 0 && c > 0
+    triangle = a + b > c && a + c > b && b + c > a && a > 0 && b > 0 && c > 0
   begin
     raise TriangleError
   rescue TriangleError => error
